@@ -4,6 +4,13 @@
 
 https://codepen.io/cdmoro/pen/ZEqbOLG
 
+## Installation
+
+1. Create a new card type on Anki (i.e. "Basic flashcard")
+2. Copy the files into the right place (front, back and styles)
+3. Select the desired variant (optional)
+4. Voila!
+
 ## Variants
 
 ### Purple
