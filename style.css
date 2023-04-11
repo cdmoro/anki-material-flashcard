@@ -37,7 +37,7 @@
 .flashcard {
   border-radius: var(--border-radius);
   background: #fff;
-  color: var(--light-font-color);
+  color: #000;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   max-width: 500px;
   margin: 0 auto;
@@ -45,6 +45,7 @@
 
 .flashcard.front .body {
   padding: 2rem;
+  color: var(--light-font-color);
 }
 
 .nightMode .flashcard {
