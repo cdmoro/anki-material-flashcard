@@ -1,76 +1,97 @@
 .card {
-    --border-radius: .4rem;
-    --dark-accent-color: #bb86fc;
-    --front-font-size: 38px;
+  --border-radius: 0.4rem;
+  --light-color: #205295;
+  --light-font-color: #FFF;
+  --dark-color: #2c74b3;
+  --dark-font-color: #000;
+  --front-font-size: 35px;
 
-    font-family: arial;
-    font-size: 22px;
-    text-align: center;
-    color: black;
-    background-color: white;
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  background: #fefefe;
+  padding: 1rem;
+}
+
+.flashcard.white {
+  --light-color: #FFF;
+  --light-font-color: #000;
+  --dark-color: #DDD;
+}
+
+.flashcard.purple {
+  --light-color: #6200ee;
+  --dark-color: #bb86fc;
+}
+
+.flashcard.pink {
+  --light-color: #AF0171;
+  --dark-color: #E80F88;
 }
 
 .nightMode.card {
-    background-color: #121212;
+  background: #121212;
 }
 
 .flashcard {
-    border-radius: var(--border-radius);
-    background-color: #FFF;
-    color: #000;
-    padding: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  border-radius: var(--border-radius);
+  background: #fff;
+  color: var(--light-font-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.flashcard.front .body {
+  padding: 2rem;
 }
 
 .nightMode .flashcard {
-    background-color: #1d1d1d;
-    color: #FFF;
+  background: #1d1d1d;
+  color: #fff;
 }
 
 .flashcard.front {
-    background: #6200ee;
-    color: #FFF;
-    font-size: var(--front-font-size);
+  background: var(--light-color);
+  color: #fff;
+  font-size: var(--front-font-size);
 }
 
 .nightMode .flashcard.front {
-    background: var(--dark-accent-color);
-    color: #000;
-}
-
-.flashcard.back {
-    padding: 0;
-    width: 100%;
+  background: var(--dark-color);
+  color: #000;
 }
 
 .flashcard.back .front {
-    padding: 2rem 1rem;
-    background: #6200ee;
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-    color: #FFF;
-    font-size: var(--front-font-size);
+  padding: 2rem;
+  background: var(--light-color);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  color: var(--light-font-color);
+  font-size: var(--front-font-size);
 }
 
 .nightMode .flashcard.back .front {
-    background-color: var(--dark-accent-color);
-    color: #000;
+  background: var(--dark-color);
+  color: var(--dark-font-color);
 }
 
 .flashcard.back .body {
-    padding: 1rem;
-    text-align: left;
+  border-top: transparent solid 1px;
+  padding: 1rem;
+  text-align: left;
 }
 
 .nightMode .replaybutton svg polygon {
-    fill: #7C4DFF;
+  fill: #7c4dff;
 }
 
 .hint {
-    font-size: 15px;
-    font-style: italic;
-    margin-top: 5px;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 5px;
 }
 
 .nightMode .hint {
-    color: #bb86fc;
+  color: #bb86fc;
 }
