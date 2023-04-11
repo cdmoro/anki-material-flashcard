@@ -1,0 +1,76 @@
+.card {
+    --border-radius: .4rem;
+    --dark-accent-color: #bb86fc;
+    --front-font-size: 38px;
+
+    font-family: arial;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+.nightMode.card {
+    background-color: #121212;
+}
+
+.flashcard {
+    border-radius: var(--border-radius);
+    background-color: #FFF;
+    color: #000;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.nightMode .flashcard {
+    background-color: #1d1d1d;
+    color: #FFF;
+}
+
+.flashcard.front {
+    background: #6200ee;
+    color: #FFF;
+    font-size: var(--front-font-size);
+}
+
+.nightMode .flashcard.front {
+    background: var(--dark-accent-color);
+    color: #000;
+}
+
+.flashcard.back {
+    padding: 0;
+    width: 100%;
+}
+
+.flashcard.back .front {
+    padding: 2rem 1rem;
+    background: #6200ee;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    color: #FFF;
+    font-size: var(--front-font-size);
+}
+
+.nightMode .flashcard.back .front {
+    background-color: var(--dark-accent-color);
+    color: #000;
+}
+
+.flashcard.back .body {
+    padding: 1rem;
+    text-align: left;
+}
+
+.nightMode .replaybutton svg polygon {
+    fill: #7C4DFF;
+}
+
+.hint {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.nightMode .hint {
+    color: #bb86fc;
+}
