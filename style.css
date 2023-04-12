@@ -1,10 +1,11 @@
 .card {
   --border-radius: 0.4rem;
-  --light-color: #205295;
+  --light-color: #FFF;
   --light-font-color: #FFF;
-  --dark-color: #2c74b3;
+  --dark-color: #1d1d1d;
   --dark-font-color: #000;
-  --front-font-size: 35px;
+  --front-font-size: 30px;
+  --border-top-color: transparent;
 
   font-family: arial;
   font-size: 20px;
@@ -14,10 +15,26 @@
   padding: 1rem;
 }
 
+.flashcard.base {
+  --light-font-color: #000;
+  --border-top-color: #DDD;
+  --dark-font-color: #FFF;
+}
+
+.nightMode .flashcard.base {
+  --border-top-color: #333;
+}
+
 .flashcard.white {
   --light-color: #FFF;
   --light-font-color: #000;
-  --dark-color: #DDD;
+  --dark-color: #FCFCFC;
+  --border-top-color: #DDD;
+}
+
+.flashcard.blue {
+  --light-color: #205295;
+  --dark-color: #2c74b3;
 }
 
 .flashcard.purple {
@@ -47,6 +64,10 @@
   padding: 2rem;
   color: var(--light-font-color);
 }
+
+.nightMode .flashcard.front .body {
+  color: var(--dark-font-color);
+ }
 
 .nightMode .flashcard {
   background: #1d1d1d;
@@ -78,7 +99,7 @@
 }
 
 .flashcard.back .body {
-  border-top: transparent solid 1px;
+  border-top: var(--border-top-color) solid 1px;
   padding: 1rem;
   text-align: left;
 }
@@ -87,12 +108,30 @@
   fill: #7c4dff;
 }
 
+a.hint {
+  text-decoration: underline;
+}
+
 .hint {
   font-size: 15px;
   font-style: italic;
   margin-top: 5px;
+  color: var(--light-color);
+  display: block;
 }
 
 .nightMode .hint {
-  color: #bb86fc;
+  color: var(--dark-color);
+}
+
+.base .hint {
+  color: var(--dark-color);
+}
+
+.white .hint {
+  color: #000;
+}
+
+.nightMode .base .hint {
+  color: var(--light-color);
 }
