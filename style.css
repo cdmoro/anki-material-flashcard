@@ -128,23 +128,13 @@
 
 .flashcard.back .body {
   border-top: var(--border-top-color) solid 1px;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: left;
 }
 
 .flashcard.front.symbol .body,
 .flashcard.back.symbol .front {
   font-size: 3.5rem;
-}
-
-.flashcard .replaybutton svg {
-  width: 20px;
-  height: 20px;
-}
-
-.replaybutton svg polygon {
-  fill: var(--accent-color);
-  align-self: center;
 }
 
 .flashcard a.hint {
@@ -181,4 +171,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.flashcard .replaybutton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.flashcard .replaybutton svg polygon {
+  fill: var(--accent-color);
+  align-self: center;
+}
+
+.flashcard .replay-button svg {
+    width: 30px;
+    height: 30px;
+}
+
+.flashcard .replay-button svg circle {
+    fill: transparent;
+    stroke: transparent;
+}
+
+.flashcard .replay-button svg path {
+    fill: var(--accent-color);
 }
