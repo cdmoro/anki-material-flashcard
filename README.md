@@ -1,4 +1,4 @@
-# Anki Basic Flashcard
+# Anki Material flashcard
 
 ![image](https://user-images.githubusercontent.com/28156761/231778289-13cb0574-403b-42f2-b9c9-0f6b5e9057b6.png)
 
@@ -24,7 +24,7 @@ https://codepen.io/cdmoro/pen/ZEqbOLG
 
 ## Variants
 
-`Anki basic flashcard` comes with several variants: base (default), blue, white, purple, pink, teal, green, and orange. All the colors were taken from the material color specification. Checkout [the demo](https://codepen.io/cdmoro/pen/ZEqbOLG) to see the colors in action!
+`Anki Material flashcard` comes with several variants: base (default), blue, white, purple, pink, teal, green, and orange. All the colors were taken from the material color specification. Checkout [the demo](https://codepen.io/cdmoro/pen/ZEqbOLG) to see the colors in action!
 
 ## Additional features
 
