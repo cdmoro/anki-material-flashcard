@@ -59,4 +59,4 @@ Dark
 
 ## Credits
 
-- Color palettes taken from here https://colorhunt.co/palettes/dark
+- Color palettes taken from https://colorhunt.co/palettes/dark
