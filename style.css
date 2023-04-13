@@ -56,17 +56,17 @@
 }
 
 .flashcard.purple {
-  --accent-color: #bb86fc;
+  --accent-color: #6200ee;
 }
 .nightMode .flashcard.purple {
-  --accent-color: #6200ee;
+  --accent-color: #bb86fc;
 }
 
 .flashcard.pink {
-  --accent-color: #AF0171;
+  --accent-color: #E80F88;
 }
 .nightMode .flashcard.pink {
-  --accent-color: #E80F88;
+  --accent-color: #F806CC;
 }
 
 .flashcard {
