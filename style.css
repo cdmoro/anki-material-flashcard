@@ -23,6 +23,130 @@
   background: #121212;
 }
 
+/* FLASHCARD */
+
+.flashcard {
+  border-radius: var(--border-radius);
+  background: var(--card-background);
+  color: var(--font-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.flashcard.front .body {
+  padding: 2rem;
+  color: #FFF;
+}
+
+.nightMode .flashcard.front .body {
+  color: #000;
+ }
+
+.flashcard.front {
+  background: var(--accent-color);
+  color: var(--font-color);
+  font-size: var(--front-font-size);
+}
+
+.flashcard.back .front {
+  padding: 2rem;
+  background: var(--accent-color);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  color: #FFF;
+  font-size: var(--front-font-size);
+}
+
+.nightMode .flashcard.back .front {
+  color: #000;
+}
+
+.flashcard.back .body {
+  border-top: var(--border-top-color) solid 1px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.flashcard.front.symbol .body,
+.flashcard.back.symbol .front {
+  font-size: 3.5rem;
+}
+
+.flashcard a.hint {
+  text-decoration: underline;
+}
+
+.flashcard .hint {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+  color: var(--accent-color);
+  display: block;
+}
+
+.flashcard.base .hint, .flashcard.white .hint {
+  color: #000;
+}
+
+.nightMode .flashcard.base .hint,
+.nightMode .flashcard.white .hint {
+  color: #FFF;
+}
+
+.flashcard.back .answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* REPLAY BUTTON MOBILE APP */
+
+.flashcard .replaybutton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.flashcard .replaybutton svg polygon {
+  fill: var(--accent-color);
+  align-self: center;
+}
+
+.flashcard.base .replaybutton svg polygon, .flashcard.white .replaybutton svg polygon {
+  fill: #000;
+}
+
+.nightMode .flashcard.base .replaybutton svg polygon,
+.nightMode .flashcard.white .replaybutton svg polygon {
+  fill: #FFF;
+}
+
+/* REPLY BUTTON DESKTOP APP */
+
+.flashcard .replay-button svg {
+    width: 30px;
+    height: 30px;
+}
+
+.flashcard .replay-button svg circle {
+    fill: transparent;
+    stroke: transparent;
+}
+
+.flashcard .replay-button svg path {
+    fill: var(--accent-color);
+}
+
+.flashcard.base .replay-button svg path, .flashcard.white .replay-button svg path {
+  fill: #000;
+}
+
+.nightMode .flashcard.base .replay-button svg path,
+.nightMode .flashcard.white .replay-button svg path {
+  fill: #FFF;
+}
+
+/* VARIANTS */
+
 .flashcard.base {
   --border-top-color: #DDD;
 }
@@ -88,111 +212,4 @@
 }
 .nightMode .flashcard.orange {
   --accent-color: #ffb74d;
-}
-
-.flashcard {
-  border-radius: var(--border-radius);
-  background: var(--card-background);
-  color: var(--font-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.flashcard.front .body {
-  padding: 2rem;
-  color: #FFF;
-}
-
-.nightMode .flashcard.front .body {
-  color: #000;
- }
-
-.flashcard.front {
-  background: var(--accent-color);
-  color: var(--font-color);
-  font-size: var(--front-font-size);
-}
-
-.flashcard.back .front {
-  padding: 2rem;
-  background: var(--accent-color);
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  color: #FFF;
-  font-size: var(--front-font-size);
-}
-
-.nightMode .flashcard.back .front {
-  color: #000;
-}
-
-.flashcard.back .body {
-  border-top: var(--border-top-color) solid 1px;
-  padding: 1.5rem;
-  text-align: left;
-}
-
-.flashcard.front.symbol .body,
-.flashcard.back.symbol .front {
-  font-size: 3.5rem;
-}
-
-.flashcard a.hint {
-  text-decoration: underline;
-}
-
-.flashcard .hint {
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 10px;
-  color: var(--accent-color);
-  display: block;
-}
-
-.flashcard.base .replaybutton svg polygon, .flashcard.white .replaybutton svg polygon {
-  fill: #000;
-}
-
-.nightMode .flashcard.base .replaybutton svg polygon,
-.nightMode .flashcard.white .replaybutton svg polygon {
-  fill: #FFF;
-}
-
-.flashcard.base .hint, .flashcard.white .hint {
-  color: #000;
-}
-
-.nightMode .flashcard.base .hint,
-.nightMode .flashcard.white .hint {
-  color: #FFF;
-}
-
-.flashcard.back .answer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flashcard .replaybutton svg {
-  width: 20px;
-  height: 20px;
-}
-
-.flashcard .replaybutton svg polygon {
-  fill: var(--accent-color);
-  align-self: center;
-}
-
-.flashcard .replay-button svg {
-    width: 30px;
-    height: 30px;
-}
-
-.flashcard .replay-button svg circle {
-    fill: transparent;
-    stroke: transparent;
-}
-
-.flashcard .replay-button svg path {
-    fill: var(--accent-color);
 }
