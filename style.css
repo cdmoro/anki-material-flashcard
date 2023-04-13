@@ -1,5 +1,5 @@
 .card {
-  --border-radius: 0.4rem;
+  --border-radius: 4px;
   --front-font-size: 24px;
   --border-top-color: transparent;
   
@@ -63,7 +63,7 @@
 
 .flashcard.back .body {
   border-top: var(--border-top-color) solid 1px;
-  padding: 1.5rem;
+  padding: 16px;
   text-align: left;
 }
 
