@@ -1,6 +1,6 @@
 .card {
   --border-radius: 0.4rem;
-  --front-font-size: 28px;
+  --front-font-size: 24px;
   --border-top-color: transparent;
   
   --accent-color: #FFF;
@@ -8,7 +8,7 @@
   --font-color: #000;
 
   font-family: arial;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: var(--font-color);
   background: #fefefe;
@@ -56,10 +56,10 @@
 }
 
 .flashcard.purple {
-  --accent-color: #6a1b9a;
+  --accent-color: #6200ee;
 }
 .nightMode .flashcard.purple {
-  --accent-color: #ba68c8;
+  --accent-color: #bb86fc;
 }
 
 .flashcard.pink {
@@ -77,7 +77,7 @@
 }
 
 .flashcard.green {
-  --accent-color: #2e7d32;
+  --accent-color: #388e3c;
 }
 .nightMode .flashcard.green {
   --accent-color: #81c784;
@@ -130,6 +130,11 @@
   border-top: var(--border-top-color) solid 1px;
   padding: 1rem;
   text-align: left;
+}
+
+.flashcard.front.symbol .body,
+.flashcard.back.symbol .front {
+  font-size: 3.5rem;
 }
 
 .flashcard .replaybutton svg {
