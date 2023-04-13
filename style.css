@@ -49,24 +49,45 @@
 }
 
 .flashcard.blue {
-  --accent-color: #2c74b3;
+  --accent-color: #1565c0;
 }
 .nightMode .flashcard.blue {
-  --accent-color: #205295;
+  --accent-color: #64b5f6;
 }
 
 .flashcard.purple {
-  --accent-color: #6200ee;
+  --accent-color: #6a1b9a;
 }
 .nightMode .flashcard.purple {
-  --accent-color: #bb86fc;
+  --accent-color: #ba68c8;
 }
 
 .flashcard.pink {
-  --accent-color: #E80F88;
+  --accent-color: #ad1457;
 }
 .nightMode .flashcard.pink {
-  --accent-color: #F806CC;
+  --accent-color: #f06292;
+}
+
+.flashcard.teal {
+  --accent-color: #00695c;
+}
+.nightMode .flashcard.teal {
+  --accent-color: #4db6ac;
+}
+
+.flashcard.green {
+  --accent-color: #2e7d32;
+}
+.nightMode .flashcard.green {
+  --accent-color: #81c784;
+}
+
+.flashcard.orange {
+  --accent-color: #ef6c00;
+}
+.nightMode .flashcard.orange {
+  --accent-color: #ffb74d;
 }
 
 .flashcard {
@@ -111,32 +132,47 @@
   text-align: left;
 }
 
-.replaybutton svg polygon {
-  fill: var(--accent-color);
+.flashcard .replaybutton svg {
+  width: 20px;
+  height: 20px;
 }
 
-a.hint {
+.replaybutton svg polygon {
+  fill: var(--accent-color);
+  align-self: center;
+}
+
+.flashcard a.hint {
   text-decoration: underline;
 }
 
-.hint {
-  font-size: 15px;
+.flashcard .hint {
+  font-size: 14px;
   font-style: italic;
   margin-top: 5px;
   color: var(--accent-color);
   display: block;
 }
 
-.base .hint, .white .hint {
+.flashcard.base .replaybutton svg polygon, .flashcard.white .replaybutton svg polygon {
+  fill: #000;
+}
+
+.nightMode .flashcard.base .replaybutton svg polygon,
+.nightMode .flashcard.white .replaybutton svg polygon {
+  fill: #FFF;
+}
+
+.flashcard.base .hint, .flashcard.white .hint {
   color: #000;
 }
 
-.nightMode .base .hint,
-.nightMode .white .hint {
+.nightMode .flashcard.base .hint,
+.nightMode .flashcard.white .hint {
   color: #FFF;
 }
 
-.answer {
+.flashcard.back .answer {
   display: flex;
   justify-content: space-between;
   align-items: center;
