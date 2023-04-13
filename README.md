@@ -56,3 +56,7 @@ Light
 Dark
 
 ![image](https://user-images.githubusercontent.com/28156761/231300686-e0aec108-da6c-45b3-8d57-9833448a1bce.png)
+
+## Credits
+
+- Color palettes taken from here https://colorhunt.co/palettes/dark
