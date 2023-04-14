@@ -12,7 +12,7 @@
   text-align: center;
   color: var(--font-color);
   background: #fefefe;
-  padding: 1rem;
+  padding: .25rem;
 }
 
 .nightMode.card {
@@ -32,6 +32,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   max-width: 500px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .flashcard.front .body {
@@ -62,9 +63,30 @@
 }
 
 .flashcard.back .body {
-  border-top: var(--border-top-color) solid 1px;
   padding: 16px;
   text-align: left;
+}
+
+.flashcard.back hr {
+  margin: 0;
+  border: none;
+  border-top: var(--border-top-color) solid 1px;
+}
+
+.flashcard.back hr:has(+ img) {
+  border-top-width: 0;
+}
+
+.flashcard.back .answer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.flashcard.back ul, .flashcard.back ol {
+  padding-left: 1rem;
+  margin: 0;
 }
 
 .flashcard.front.symbol .body,
@@ -93,10 +115,13 @@
   color: #FFF;
 }
 
-.flashcard.back .answer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* IMAGES */
+
+.flashcard.back img {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+  display: block;
 }
 
 /* REPLAY BUTTON MOBILE APP */
