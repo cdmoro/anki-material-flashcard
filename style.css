@@ -12,7 +12,7 @@
   text-align: center;
   color: var(--font-color);
   background: #fefefe;
-  padding: .25rem;
+  padding: .5rem;
 }
 
 .nightMode.card {
@@ -91,8 +91,14 @@
 }
 
 .flashcard.front.symbol .body,
-.flashcard.back.symbol .front {
+.flashcard.back.symbol .front, 
+.flashcard .symbol {
   font-size: 3.5rem;
+}
+
+.flashcard.front .body .emoji,
+.flashcard.back .front .emoji {
+  font-size: 4rem;
 }
 
 .flashcard a.hint {
