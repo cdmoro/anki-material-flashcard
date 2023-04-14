@@ -71,6 +71,7 @@
   margin: 0;
   border: none;
   border-top: var(--border-top-color) solid 1px;
+  background: none;
 }
 
 .flashcard.back hr:has(+ img) {
