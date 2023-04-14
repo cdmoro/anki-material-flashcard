@@ -118,10 +118,14 @@
 
 /* IMAGES */
 
+.flashcard.front img {
+  max-height: 180px;
+}
+
 .flashcard.back img {
   width: 100%;
   object-fit: cover;
-  height: 180px;
+  max-height: 180px;
   display: block;
 }
 
