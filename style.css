@@ -51,6 +51,7 @@
 .flashcard.front .header {
   font-size: .8rem;
   margin-bottom: 1rem;
+  font-style: italic;
 }
 
 .flashcard.front {
