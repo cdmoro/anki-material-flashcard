@@ -1,3 +1,5 @@
+/* SCREEN STYLES */
+
 .card {
   --border-radius: 4px;
   --front-font-size: 24px;
@@ -283,11 +285,13 @@
   padding: 1rem;
 }
 
-.text-block *:first-child,
-.text-block *:last-child {
+.text-block *:first-child {
   margin-top: 0;
-  margin-bottom: 0;
   padding-top: 0;
+}
+
+.text-block *:last-child {
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
