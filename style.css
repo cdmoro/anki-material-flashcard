@@ -120,7 +120,6 @@
 .flashcard .hint {
   font-size: 14px;
   font-style: italic;
-  margin-top: 10px;
   color: var(--accent-color);
   display: block;
 }
