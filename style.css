@@ -1,5 +1,3 @@
-/* SCREEN STYLES */
-
 .card {
   --border-radius: 4px;
   --front-font-size: 24px;
@@ -50,6 +48,11 @@
   color: #000;
 }
 
+.flashcard.front .header {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
 .flashcard.front {
   background: var(--accent-color);
   font-size: var(--front-font-size);
@@ -82,9 +85,9 @@
 }
 
 .flashcard.back .subtitle {
-  font-size: 15px;
-  margin-bottom: .5rem;
-  opacity: .6;
+  font-size: .85rem;
+  margin-bottom: 0.6rem;
+  opacity: 0.6;
 }
 
 .flashcard.back ul,
@@ -274,7 +277,8 @@
   padding: 1rem;
 }
 
-.text-block *:first-child, .text-block *:last-child {
+.text-block *:first-child,
+.text-block *:last-child {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
@@ -282,16 +286,25 @@
 }
 
 .text-block + .text-block {
-  border-top: 1px solid #DDD;
+  border-top: 1px solid #ddd;
 }
 
 .nightMode .text-block + .text-block {
   border-top: 1px solid #333;
 }
 
-.two-cols {
+.flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.flashcard .pill {
+  font-size: 70%;
+  color: #000;
+  background: #DDDDDD99;
+  padding: 0.4rem 0.7rem;
+  border-radius: 1rem;
+  display: inline-block;
 }
