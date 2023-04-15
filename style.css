@@ -1,251 +1,280 @@
 .card {
-  --border-radius: 4px;
-  --front-font-size: 24px;
-  --border-top-color: transparent;
-  
-  --accent-color: #FFF;
-  --card-background: #FFF;
-  --font-color: #000;
+	--border-radius: 4px;
+	--front-font-size: 24px;
+	--border-top-color: transparent;
 
-  font-family: arial;
-  font-size: 18px;
-  text-align: center;
-  color: var(--font-color);
-  background: #fefefe;
-  padding: .5rem;
+	--accent-color: #fff;
+	--card-background: #fff;
+	--font-color: #000;
+
+	font-family: arial;
+	font-size: 18px;
+	text-align: center;
+	color: var(--font-color);
+	background: #fefefe;
+	padding: 0.5rem;
 }
 
 .nightMode.card {
-  --accent-color: #1d1d1d;
-  --font-color: #FFF;
-  --card-background: #1d1d1d;
-  
-  background: #121212;
+	--accent-color: #1d1d1d;
+	--font-color: #fff;
+	--card-background: #1d1d1d;
+
+	background: #121212;
 }
 
 /* FLASHCARD */
 
-.flashcard {
-  border-radius: var(--border-radius);
-  background: var(--card-background);
-  color: var(--font-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  max-width: 500px;
-  margin: 0 auto;
-  overflow: hidden;
+.card .flashcard.front,
+.card .flashcard.back {
+	max-width: 500px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	border-radius: var(--border-radius);
+	margin: 0 auto;
+	overflow: hidden;
+	color: var(--font-color);
+}
+
+.card .flashcard.back {
+	background: var(--card-background);
 }
 
 .flashcard.front .body {
-  padding: 2rem;
-  color: #FFF;
+	padding: 1.5rem;
+	color: #fff;
 }
 
 .nightMode .flashcard.front .body {
-  color: #000;
- }
+	color: #000;
+}
 
 .flashcard.front {
-  background: var(--accent-color);
-  color: var(--font-color);
-  font-size: var(--front-font-size);
+	background: var(--accent-color);
+	font-size: var(--front-font-size);
 }
 
 .flashcard.back .front {
-  padding: 2rem;
-  background: var(--accent-color);
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  color: #FFF;
-  font-size: var(--front-font-size);
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+	color: #fff;
+	font-size: var(--front-font-size);
+	box-shadow: none;
 }
 
 .nightMode .flashcard.back .front {
-  color: #000;
+	color: #000;
 }
 
-.flashcard.back .body {
-  padding: 16px;
-  text-align: left;
+.flashcard.back>.body {
+	padding: 16px;
+	text-align: left;
 }
 
 .flashcard.back hr {
-  margin: 0;
-  border: none;
-  border-top: var(--border-top-color) solid 1px;
-  background: none;
+	margin: 0;
+	border: none;
+	border-top: var(--border-top-color) solid 1px;
+	background: none;
 }
 
 .flashcard.back hr:has(+ img) {
-  border-top-width: 0;
+	border-top-width: 0;
 }
 
 .flashcard.back .answer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
 }
 
-.flashcard.back ul, .flashcard.back ol {
-  padding-left: 1rem;
-  margin: 0;
+.flashcard.back ul,
+.flashcard.back ol {
+	padding-left: 1rem;
+	margin: 0;
 }
 
 .flashcard.front.symbol .body,
-.flashcard.back.symbol .front, 
 .flashcard .symbol {
-  font-size: 3.5rem;
+	font-size: 4rem;
 }
 
-.flashcard.front .body .emoji,
-.flashcard.back .front .emoji {
-  font-size: 4rem;
+.flashcard.front .body .emoji {
+	font-size: 4rem;
 }
 
 .flashcard a.hint {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .flashcard .hint {
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 10px;
-  color: var(--accent-color);
-  display: block;
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 10px;
+	color: var(--accent-color);
+	display: block;
 }
 
-.flashcard.base .hint, .flashcard.white .hint {
-  color: #000;
+.flashcard.base .hint,
+.flashcard.white .hint {
+	color: #000;
 }
 
 .nightMode .flashcard.base .hint,
 .nightMode .flashcard.white .hint {
-  color: #FFF;
+	color: #fff;
 }
 
 /* IMAGES */
 
 .flashcard.front img {
-  max-height: 180px;
+	max-height: 150px;
+	max-width: 400px;
 }
 
 .flashcard.back img {
-  width: 100%;
-  object-fit: cover;
-  max-height: 180px;
-  display: block;
+	width: 100%;
+	object-fit: cover;
+	max-height: 180px;
+	display: block;
 }
 
 /* REPLAY BUTTON MOBILE APP */
 
 .flashcard .replaybutton svg {
-  width: 20px;
-  height: 20px;
+	width: 20px;
+	height: 20px;
 }
 
 .flashcard .replaybutton svg polygon {
-  fill: var(--accent-color);
-  align-self: center;
+	fill: var(--accent-color);
+	align-self: center;
 }
 
-.flashcard.base .replaybutton svg polygon, .flashcard.white .replaybutton svg polygon {
-  fill: #000;
+.flashcard.base .replaybutton svg polygon,
+.flashcard.white .replaybutton svg polygon {
+	fill: #000;
 }
 
 .nightMode .flashcard.base .replaybutton svg polygon,
 .nightMode .flashcard.white .replaybutton svg polygon {
-  fill: #FFF;
+	fill: #fff;
 }
 
 /* REPLY BUTTON DESKTOP APP */
 
 .flashcard .replay-button svg {
-    width: 30px;
-    height: 30px;
+	width: 20px;
+	height: 20px;
 }
 
 .flashcard .replay-button svg circle {
-    fill: transparent;
-    stroke: transparent;
+	fill: transparent;
+	stroke: transparent;
 }
 
 .flashcard .replay-button svg path {
-    fill: var(--accent-color);
+	fill: var(--accent-color);
+	transform: scale(1.3);
+	transform-origin: center;
 }
 
-.flashcard.base .replay-button svg path, .flashcard.white .replay-button svg path {
-  fill: #000;
+.flashcard.base .replay-button svg path,
+.flashcard.white .replay-button svg path {
+	fill: #000;
 }
 
 .nightMode .flashcard.base .replay-button svg path,
 .nightMode .flashcard.white .replay-button svg path {
-  fill: #FFF;
+	fill: #fff;
 }
 
 /* VARIANTS */
 
 .flashcard.base {
-  --border-top-color: #DDD;
+	--border-top-color: #ddd;
 }
-.flashcard.base .front, .flashcard.base.front .body {
-  color: #000 !important;
+
+.flashcard.base .front,
+.flashcard.base.front .body {
+	color: #000 !important;
 }
+
 .nightMode .flashcard.base {
-  --border-top-color: #333;
+	--border-top-color: #333;
 }
-.nightMode .flashcard.base .front, .nightMode .flashcard.base.front .body {
-  color: #FFF !important;
+
+.nightMode .flashcard.base .front,
+.nightMode .flashcard.base.front .body {
+	color: #fff !important;
 }
 
 .flashcard.white {
-  --accent-color: #FFF;
-  --border-top-color: #DDD;
+	--accent-color: #fff;
+	--border-top-color: #ddd;
 }
-.flashcard.white.front .body, .flashcard.white .front {
-  color: #000 !important;
+
+.flashcard.white.front .body,
+.flashcard.white .front {
+	color: #000 !important;
 }
+
 .nightMode .flashcard.white {
-  --accent-color: #FCFCFC;
-  --border-top-color: #DDD;
+	--accent-color: #fcfcfc;
+	--border-top-color: #ddd;
 }
 
 .flashcard.blue {
-  --accent-color: #1565c0;
+	--accent-color: #1565c0;
 }
+
 .nightMode .flashcard.blue {
-  --accent-color: #64b5f6;
+	--accent-color: #64b5f6;
 }
 
 .flashcard.purple {
-  --accent-color: #6200ee;
+	--accent-color: #6200ee;
 }
+
 .nightMode .flashcard.purple {
-  --accent-color: #bb86fc;
+	--accent-color: #bb86fc;
 }
 
 .flashcard.pink {
-  --accent-color: #e91e63;
+	--accent-color: #e91e63;
 }
+
 .nightMode .flashcard.pink {
-  --accent-color: #f06292;
+	--accent-color: #f06292;
 }
 
 .flashcard.teal {
-  --accent-color: #00695c;
+	--accent-color: #00695c;
 }
+
 .nightMode .flashcard.teal {
-  --accent-color: #4db6ac;
+	--accent-color: #4db6ac;
 }
 
 .flashcard.green {
-  --accent-color: #388e3c;
+	--accent-color: #388e3c;
 }
+
 .nightMode .flashcard.green {
-  --accent-color: #81c784;
+	--accent-color: #81c784;
 }
 
 .flashcard.orange {
-  --accent-color: #ef6c00;
+	--accent-color: #ef6c00;
 }
+
 .nightMode .flashcard.orange {
-  --accent-color: #ffb74d;
+	--accent-color: #ffb74d;
+}
+
+/* UTILITY CLASSES */
+
+.two-cols {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
