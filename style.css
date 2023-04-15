@@ -54,6 +54,11 @@
   font-style: italic;
 }
 
+.flashcard.front .subheader {
+  margin-top: .5rem;
+  font-size: 1rem;
+}
+
 .flashcard.front {
   background: var(--accent-color);
   font-size: var(--front-font-size);
