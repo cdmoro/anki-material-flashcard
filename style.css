@@ -1,346 +1,336 @@
 /* ===SCREEN STYLES=== */
 
 .card {
-    --border-radius: 4px;
-    --front-font-size: 24px;
-    --border-top-color: transparent;
+  --border-radius: 4px;
+  --front-font-size: 24px;
+  --border-top-color: transparent;
 
-    --accent-color: #fff;
-    --card-background: #fff;
-    --font-color: #000;
+  --accent-color: #fff;
+  --card-background: #fff;
+  --font-color: #000;
 
-    font-family: arial;
-    font-size: 18px;
-    text-align: center;
-    color: var(--font-color);
-    background: #fefefe;
-    padding: 0.5rem;
+  font-family: arial;
+  font-size: 18px;
+  text-align: center;
+  color: var(--font-color);
+  background: #fefefe;
+  padding: 0.5rem;
 }
 
 .nightMode.card {
-    --accent-color: #1d1d1d;
-    --font-color: #fff;
-    --card-background: #1d1d1d;
+  --accent-color: #1d1d1d;
+  --font-color: #fff;
+  --card-background: #1d1d1d;
 
-    background: #121212;
+  background: #121212;
 }
 
 /* ===FLASHCARD=== */
 
 .card .flashcard.front,
 .card .flashcard.back {
-    max-width: 500px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: var(--border-radius);
-    margin: 0 auto;
-    overflow: hidden;
-    color: var(--font-color);
+  max-width: 500px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+  overflow: hidden;
+  color: var(--font-color);
 }
 
 .card .flashcard.back {
-    background: var(--card-background);
+  background: var(--card-background);
 }
 
 .flashcard.front .body {
-    padding: 1.5rem;
-    color: #fff;
+  padding: 1.5rem;
+  color: #fff;
 }
 
 .nightMode .flashcard.front .body {
-    color: #000;
+  color: #000;
 }
 
 .flashcard.front .header {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-    font-style: italic;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 .flashcard.front .subheader {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 .flashcard.front {
-    background: var(--accent-color);
-    font-size: var(--front-font-size);
+  background: var(--accent-color);
+  font-size: var(--front-font-size);
 }
 
 .flashcard.back .front {
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-    color: #fff;
-    font-size: var(--front-font-size);
-    box-shadow: none;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  color: #fff;
+  font-size: var(--front-font-size);
+  box-shadow: none;
 }
 
 .nightMode .flashcard.back .front {
-    color: #000;
+  color: #000;
 }
 
-.flashcard.back>.body {
-    text-align: left;
+.flashcard.back > .body {
+  text-align: left;
 }
 
 .flashcard.back hr {
-    margin: 0;
-    border: none;
-    border-top: var(--border-top-color) solid 1px;
-    background: none;
+  margin: 0;
+  border: none;
+  border-top: var(--border-top-color) solid 1px;
+  background: none;
 }
 
-.flashcard.back hr:has(+ img) {
-    border-top-width: 0;
+.flashcard.back hr:has(+ .body > img:first-child) {
+  border-top-width: 0;
 }
 
 .flashcard.back .subtitle {
-    font-size: 16px;
-    margin-bottom: 0.6rem;
-    opacity: 0.6;
-    margin-top: 1rem;
+  font-size: 16px;
+  margin-bottom: 0.6rem;
+  opacity: 0.6;
+  margin-top: 1rem;
 }
 
 .flashcard.back .subtitle:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .flashcard.back ul,
 .flashcard.back ol {
-    padding-left: 1rem;
-    margin: 0;
+  padding-left: 1rem;
+  margin: 0;
 }
 
 .flashcard-front .body .symbol {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .flashcard.front .body .emoji {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 /* ===HINT STYLES=== */
 
 .flashcard a.hint {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .flashcard .hint {
-    font-size: 14px;
-    font-style: italic;
-    color: var(--accent-color);
-    display: block;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--accent-color);
+  display: block;
 }
 
 .flashcard.base .hint,
 .flashcard.white .hint {
-    color: #000;
+  color: #000;
 }
 
 .nightMode .flashcard.base .hint,
 .nightMode .flashcard.white .hint {
-    color: #fff;
+  color: #fff;
 }
 
-/* ===IMAGES=== */
+/* ===IMAGE STYLES=== */
 
 .flashcard.front img {
-    max-height: 150px;
-    max-width: 400px;
+  max-height: 150px;
+  max-width: 400px;
+  vertical-align: middle;
 }
 
-.flashcard.back img {
-    width: 100%;
-    object-fit: cover;
-    max-height: 180px;
-    display: block;
+.flashcard.back > .body img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 180px;
+  display: block;
 }
 
 /* ===REPLAY BUTTON (MOBILE APP)=== */
 
 .flashcard .replaybutton span {
-    display: flex;
-    padding: 0;
+  display: flex;
+  padding: 0;
 }
 
 .flashcard .replaybutton svg polygon {
-    fill: var(--accent-color);
-    align-self: center;
+  fill: var(--accent-color);
+  align-self: center;
 }
 
 .flashcard.base .replaybutton svg polygon,
 .flashcard.white .replaybutton svg polygon {
-    fill: #000;
+  fill: #000;
 }
 
 .nightMode .flashcard.base .replaybutton svg polygon,
 .nightMode .flashcard.white .replaybutton svg polygon {
-    fill: #fff;
+  fill: #fff;
 }
 
 /* ===REPLY BUTTON (DESKTOP APP)=== */
 
 .flashcard .replay-button {
-    margin: 0;
+  margin: 0;
 }
 
 .flashcard .replay-button svg {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .flashcard .replay-button svg circle {
-    fill: transparent;
-    stroke: transparent;
+  fill: transparent;
+  stroke: transparent;
 }
 
 .flashcard .replay-button svg path {
-    fill: var(--accent-color);
-    transform: scale(0.9);
-    transform-origin: center;
+  fill: var(--accent-color);
+  transform: scale(0.9);
+  transform-origin: center;
 }
 
 .flashcard.base .replay-button svg path,
 .flashcard.white .replay-button svg path {
-    fill: #000;
+  fill: #000;
 }
 
 .nightMode .flashcard.base .replay-button svg path,
 .nightMode .flashcard.white .replay-button svg path {
-    fill: #fff;
+  fill: #fff;
 }
 
 /* ===REPLAY BUTTON (FIREFOX)=== */
 
 .flashcard .gecko audio {
-    width: 48px;
-    height: 32px;
+  width: 48px;
+  height: 32px;
 }
 
 /* ===REPLAY BUTTON (CHROME)=== */
 
 .flashcard .chrome audio {
-    width: 143px;
-    height: 32px;
+  width: 143px;
+  height: 32px;
 }
 
 /* ===VARIANTS=== */
 
 .flashcard.base {
-    --border-top-color: #ddd;
+  --border-top-color: #ddd;
 }
-
 .flashcard.base .front,
 .flashcard.base.front .body {
-    color: #000 !important;
+  color: #000 !important;
 }
-
 .nightMode .flashcard.base {
-    --border-top-color: #333;
+  --border-top-color: #333;
 }
-
 .nightMode .flashcard.base .front,
 .nightMode .flashcard.base.front .body {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .flashcard.white {
-    --accent-color: #fff;
-    --border-top-color: #ddd;
+  --accent-color: #fff;
+  --border-top-color: #ddd;
 }
-
 .flashcard.white.front .body,
 .flashcard.white .front {
-    color: #000 !important;
+  color: #000 !important;
 }
-
 .nightMode .flashcard.white {
-    --accent-color: #fcfcfc;
-    --border-top-color: #ddd;
+  --accent-color: #fcfcfc;
+  --border-top-color: #ddd;
 }
 
 .flashcard.blue {
-    --accent-color: #1565c0;
+  --accent-color: #1565c0;
 }
-
 .nightMode .flashcard.blue {
-    --accent-color: #64b5f6;
+  --accent-color: #64b5f6;
 }
 
 .flashcard.purple {
-    --accent-color: #6200ee;
+  --accent-color: #6200ee;
 }
-
 .nightMode .flashcard.purple {
-    --accent-color: #bb86fc;
+  --accent-color: #bb86fc;
 }
 
 .flashcard.pink {
-    --accent-color: #e91e63;
+  --accent-color: #e91e63;
 }
-
 .nightMode .flashcard.pink {
-    --accent-color: #f06292;
+  --accent-color: #f06292;
 }
 
 .flashcard.teal {
-    --accent-color: #00695c;
+  --accent-color: #00695c;
 }
-
 .nightMode .flashcard.teal {
-    --accent-color: #4db6ac;
+  --accent-color: #4db6ac;
 }
 
 .flashcard.green {
-    --accent-color: #388e3c;
+  --accent-color: #388e3c;
 }
-
 .nightMode .flashcard.green {
-    --accent-color: #81c784;
+  --accent-color: #81c784;
 }
 
 .flashcard.orange {
-    --accent-color: #ef6c00;
+  --accent-color: #ef6c00;
 }
-
 .nightMode .flashcard.orange {
-    --accent-color: #ffb74d;
+  --accent-color: #ffb74d;
 }
 
 /* ===UTILITY CLASSES=== */
 
 .text-block {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .text-block *:first-child {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .text-block *:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.text-block+.text-block {
-    border-top: 1px solid #ddd;
+.text-block + .text-block {
+  border-top: 1px solid #ddd;
 }
 
-.nightMode .text-block+.text-block {
-    border-top: 1px solid #333;
+.nightMode .text-block + .text-block {
+  border-top: 1px solid #333;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .flashcard .pill {
-    font-size: 70%;
-    color: #000;
-    background: #dddddd99;
-    padding: 0.4rem 0.7rem;
-    border-radius: 1rem;
-    display: inline-block;
+  font-size: 70%;
+  color: #000;
+  background: #dddddd99;
+  padding: 0.4rem 0.7rem;
+  border-radius: 1rem;
+  display: inline-block;
 }
