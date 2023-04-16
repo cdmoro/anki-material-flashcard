@@ -1,4 +1,4 @@
-/* SCREEN STYLES */
+/* ===SCREEN STYLES=== */
 
 .card {
   --border-radius: 4px;
@@ -25,7 +25,7 @@
   background: #121212;
 }
 
-/* FLASHCARD */
+/* ===FLASHCARD=== */
 
 .card .flashcard.front,
 .card .flashcard.back {
@@ -93,7 +93,7 @@
 }
 
 .flashcard.back .subtitle {
-  font-size: .85rem;
+  font-size: 1rem;
   margin-bottom: 0.6rem;
   opacity: 0.6;
 }
@@ -104,14 +104,15 @@
   margin: 0;
 }
 
-.flashcard.front.symbol .body,
-.flashcard .symbol {
+.flashcard-front .body .symbol {
   font-size: 4rem;
 }
 
 .flashcard.front .body .emoji {
   font-size: 4rem;
 }
+
+/* ===HINT STYLES=== */
 
 .flashcard a.hint {
   text-decoration: underline;
@@ -134,7 +135,7 @@
   color: #fff;
 }
 
-/* IMAGES */
+/* ===IMAGES=== */
 
 .flashcard.front img {
   max-height: 150px;
@@ -148,15 +149,10 @@
   display: block;
 }
 
-/* REPLAY BUTTON MOBILE APP */
+/* ===REPLAY BUTTON (MOBILE APP)=== */
 
-.flashcard .replaybutton {
-  height: 20px;
-}
-
-.flashcard .replaybutton svg {
-  width: 20px;
-  height: 20px;
+.flashcard .replaybutton span {
+  display: flex;
 }
 
 .flashcard .replaybutton svg polygon {
@@ -174,7 +170,7 @@
   fill: #fff;
 }
 
-/* REPLY BUTTON DESKTOP APP */
+/* ===REPLY BUTTON (DESKTOP APP)=== */
 
 .flashcard .replay-button {
   height: 20px;
@@ -206,7 +202,7 @@
   fill: #fff;
 }
 
-/* VARIANTS */
+/* ===VARIANTS=== */
 
 .flashcard.base {
   --border-top-color: #ddd;
@@ -278,7 +274,7 @@
   --accent-color: #ffb74d;
 }
 
-/* UTILITY CLASSES */
+/* ===UTILITY CLASSES=== */
 
 .text-block {
   padding: 1rem;
