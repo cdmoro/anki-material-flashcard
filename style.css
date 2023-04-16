@@ -44,6 +44,9 @@
 .flashcard.front .body {
   padding: 1.5rem;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nightMode .flashcard.front .body {
@@ -297,10 +300,6 @@
 }
 
 /* ===UTILITY CLASSES=== */
-
-.question-block:not(:first-child) {
-  margin-top: 1rem;
-}
 
 .text-block {
   padding: 1rem;
