@@ -62,6 +62,9 @@ If you are learning Chinese, Greek, and so, you can add the class `symbol` to th
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232530112-fcc11f3c-9119-4d39-a6b9-e658c57898ef.png">
 
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232543913-c2acddb4-b5e7-47b0-bf3f-101ad012d449.png">
+
+
 ## Examples
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232532530-dd7edc81-0334-4dc7-99db-aa08d6544958.png">
