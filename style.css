@@ -152,7 +152,7 @@
   vertical-align: middle;
 }
 
-.flashcard.back > .body img {
+.flashcard.back > .body > img {
   width: 100%;
   object-fit: cover;
   max-height: 180px;
@@ -211,6 +211,17 @@
 .nightMode .flashcard.base .replay-button svg path,
 .nightMode .flashcard.white .replay-button svg path {
   fill: #fff;
+}
+
+.flashcard.front .replay-button svg path,
+.nightMode .flashcard.front.base .replay-button svg path {
+    fill: #FFF;
+}
+
+.nightMode .flashcard.front .replay-button svg path,
+.flashcard.front.base .replay-button svg path,
+.flashcard.front.white .replay-button svg path{
+    fill: #000;
 }
 
 /* ===REPLAY BUTTON (FIREFOX)=== */
@@ -337,4 +348,8 @@
   padding: 0.4rem 0.7rem;
   border-radius: 1rem;
   display: inline-block;
+}
+
+.center {
+  text-align: center;
 }
