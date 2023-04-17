@@ -1,8 +1,8 @@
 # Anki Material flashcard
 
-<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232525097-8feb5fa1-7cfe-45d1-a2fe-b35d384e82d6.png">
-
-<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232524999-ee31ce31-38e8-48b1-8140-21d7ac6d0ce8.png">
+| Light theme | Dark theme |
+|---|---|
+|<img width="350" alt="image" src="https://user-images.githubusercontent.com/28156761/232525097-8feb5fa1-7cfe-45d1-a2fe-b35d384e82d6.png">|<img width="350" alt="image" src="https://user-images.githubusercontent.com/28156761/232524999-ee31ce31-38e8-48b1-8140-21d7ac6d0ce8.png">|
 
 ## Demo
 
@@ -77,7 +77,16 @@ If you are learning Chinese, Greek, and so, you can add the class `symbol` to th
 <img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232530727-f5a84bf5-8904-4457-9b54-6ab204fc866e.png">
 <img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232530565-f7697639-5399-4765-94d5-9ff4a1d1df28.png">
 
+## Examples
 
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/28156761/232532381-76df2928-2c62-4523-b7d0-7ba2b9832915.png">
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/28156761/232532530-dd7edc81-0334-4dc7-99db-aa08d6544958.png">
+
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/28156761/232532862-b31fb4fe-5d3d-470e-96f1-4cfc8ffb4746.png">
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/28156761/232532897-cba85ae2-8b87-40e7-9182-3d8fe57702e3.png">
+
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/28156761/232533102-d391f4bd-eb5a-4cd7-b7b1-eb4218bceb45.png">
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/28156761/232533136-6143459f-fa53-436f-b950-2140e9a95e99.png">
 
 
 
