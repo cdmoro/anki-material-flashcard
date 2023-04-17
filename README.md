@@ -1,8 +1,9 @@
 # Anki Material flashcard
 
-| Light theme | Dark theme |
+| Light | Dark |
 |---|---|
-|<img width="350" alt="image" src="https://user-images.githubusercontent.com/28156761/232525097-8feb5fa1-7cfe-45d1-a2fe-b35d384e82d6.png">|<img width="350" alt="image" src="https://user-images.githubusercontent.com/28156761/232524999-ee31ce31-38e8-48b1-8140-21d7ac6d0ce8.png">|
+|<img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232539633-d1965e42-1ab8-4017-9ce0-d244df5738ae.png">|<img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232539720-e41fbf59-9b95-4975-b6e1-7e6798b5c257.png">|
+|<img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232539801-6ae3780b-83e9-4ee9-b7e3-edb51e857e98.png">|<img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232539842-48e00aa7-c54a-40ac-ab98-00eaf1f16c09.png">|
 
 ## Demo
 
