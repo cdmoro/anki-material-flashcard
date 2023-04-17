@@ -1,6 +1,8 @@
 # Anki Material flashcard
 
-![image](https://user-images.githubusercontent.com/28156761/231778289-13cb0574-403b-42f2-b9c9-0f6b5e9057b6.png)
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232525097-8feb5fa1-7cfe-45d1-a2fe-b35d384e82d6.png">
+
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232524999-ee31ce31-38e8-48b1-8140-21d7ac6d0ce8.png">
 
 ## Demo
 
@@ -59,6 +61,25 @@ Result:
 If you are learning Chinese, Greek, and so, you can add the class `symbol` to the flashcards to get this more appeal style.
 
 ![image](https://user-images.githubusercontent.com/28156761/231778907-9e43709b-db40-4d59-8c9a-e48b1d82c5f1.png)
+
+### Header & Hint
+
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232527065-f30e4253-ce40-45d4-bf15-a51f6463dee4.png">
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232526942-af0c100c-b740-4bef-a235-4fdead0a2615.png">
+
+### Emoji
+
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232530297-f0520548-1104-4f4c-bca1-1d24a7939b1f.png">
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232530112-fcc11f3c-9119-4d39-a6b9-e658c57898ef.png">
+
+### Symbol
+
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232530727-f5a84bf5-8904-4457-9b54-6ab204fc866e.png">
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/28156761/232530565-f7697639-5399-4765-94d5-9ff4a1d1df28.png">
+
+
+
+
 
 ## Credits
 
