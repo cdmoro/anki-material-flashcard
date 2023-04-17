@@ -341,6 +341,14 @@
   gap: 1rem;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .flashcard .pill {
   font-size: 70%;
   color: #000;
