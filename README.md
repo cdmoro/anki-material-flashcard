@@ -116,7 +116,7 @@ If you are learning Chinese, Greek, and so, you can add the class `symbol` to th
 
 ## Examples
 
-These examples were taken from imported decks and applied the Material flashcard.
+These examples were taken from imported decks and applied the Material flashcard (with minor adjustments).
 
 - [Greek alphabet with Modern Greek pronunciation](https://ankiweb.net/shared/info/1298930846)
 
