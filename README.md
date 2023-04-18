@@ -118,9 +118,17 @@ If you are learning Chinese, Greek, and so, you can add the class `symbol` to th
 
 These examples were taken from imported decks and applied the Material flashcard.
 
+- [Greek alphabet with Modern Greek pronunciation](https://ankiweb.net/shared/info/1298930846)
+
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232532530-dd7edc81-0334-4dc7-99db-aa08d6544958.png">
 
+- [British English IPA pronunciation drill](https://ankiweb.net/shared/info/115334323)
+
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232532897-cba85ae2-8b87-40e7-9182-3d8fe57702e3.png">
+
+- [Italian Core 100 - Basic words (EN IT with audio)](https://ankiweb.net/shared/info/72104535) (dark theme, white variant)
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/28156761/232721398-f9a08c85-f31b-4861-8ddf-e158b75a53bd.png">
 
 ## Credits
 
