@@ -132,4 +132,4 @@ These examples were taken from imported decks and applied the Material flashcard
 
 ## Credits
 
-- Color palettes taken from https://colorhunt.co/palettes/dark
+- Color variants were taken from https://mui.com/material-ui/customization/color/#color-palette
