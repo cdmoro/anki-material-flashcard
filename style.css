@@ -11,7 +11,6 @@
 
   font-family: arial;
   font-size: 18px;
-  text-align: center;
   color: var(--font-color);
   background: #fefefe;
   padding: 0.5rem;
@@ -44,9 +43,6 @@
 .flashcard.front .body {
   padding: 1.5rem;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .nightMode .flashcard.front .body {
@@ -159,10 +155,10 @@
   display: block;
 }
 
-/* ===REPLAY BUTTON (MOBILE APP)=== */
+/* ===REPLAY BUTTON (ANDROID MOBILE APP)=== */
 
 .flashcard .replaybutton span {
-  display: flex;
+  height: 32px;
   padding: 0;
 }
 
@@ -179,6 +175,17 @@
 .nightMode .flashcard.base .replaybutton svg polygon,
 .nightMode .flashcard.white .replaybutton svg polygon {
   fill: #fff;
+}
+
+.flashcard.front .replaybutton svg polygon,
+.nightMode .flashcard.front.base .replaybutton svg polygon {
+    fill: #FFF;
+}
+
+.nightMode .flashcard.front .replaybutton svg polygon,
+.flashcard.front.base .replaybutton svg polygon,
+.flashcard.front.white .replaybutton svg polygon {
+    fill: #000;
 }
 
 /* ===REPLY BUTTON (DESKTOP APP)=== */
@@ -220,7 +227,7 @@
 
 .nightMode .flashcard.front .replay-button svg path,
 .flashcard.front.base .replay-button svg path,
-.flashcard.front.white .replay-button svg path{
+.flashcard.front.white .replay-button svg path {
     fill: #000;
 }
 
@@ -338,7 +345,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .flex-row {
