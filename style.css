@@ -261,7 +261,8 @@ div + .hint {
 
 /* ===VARIANTS=== */
 
-.flashcard.base {
+.flashcard.base,
+.flashcard.base + hr {
   --accent-color: #fff;
   --border-top-color: #ddd;
 }
@@ -269,7 +270,8 @@ div + .hint {
 .flashcard.base.front .body {
   color: #000 !important;
 }
-.nightMode .flashcard.base {
+.nightMode .flashcard.base,
+.nightMode .flashcard.base + hr {
   --accent-color: #1d1d1d;
   --border-top-color: #333;
 }
@@ -288,7 +290,7 @@ div + .hint {
 }
 .nightMode .flashcard.white {
   --accent-color: #fcfcfc;
-  --border-top-color: #ddd;
+  --border-top-color: transparent;
 }
 
 .flashcard.blue {
@@ -331,6 +333,18 @@ div + .hint {
 }
 .nightMode .flashcard.orange {
   --accent-color: #ffb74d;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.base .accent-color {
+  color: #000;
+}
+
+.nightMode .base .accent-color {
+  color: #FFF;
 }
 
 /* ===UTILITY CLASSES=== */
