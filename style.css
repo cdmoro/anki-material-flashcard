@@ -10,7 +10,7 @@
   --font-color: #000;
 
   font-family: arial;
-  font-size: 18px;
+  font-size: 17px;
   color: var(--font-color);
   background: #fefefe;
   padding: 0.5rem;
@@ -41,8 +41,9 @@
 }
 
 .flashcard.front .body {
-  padding: 1.5rem 1rem;
+  padding: 16px;
   color: #fff;
+  text-wrap: balance;
 }
 
 .nightMode .flashcard.front .body {
@@ -87,7 +88,8 @@
   background: none;
 }
 
-.flashcard.back hr:has(+ .body > img:first-child) {
+.flashcard.back > hr:has(+ .body > img:first-child),
+.flashcard.back > hr:has(+ img:first-child){
   border-top-width: 0;
 }
 
@@ -120,6 +122,7 @@
 /* ===HINT STYLES=== */
 
 .flashcard a.hint {
+  margin: .5rem 0;
   text-decoration: underline;
 }
 
@@ -253,6 +256,17 @@
   height: 32px;
 }
 
+/* ===PILL STYLES=== */
+
+.flashcard .text-block .pill {
+  font-size: 70%;
+  color: #000;
+  background: #dddddd99;
+  padding: 0.4rem 0.7rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
 /* ===VARIANTS=== */
 
 .flashcard.base {
@@ -327,25 +341,25 @@
 
 /* ===UTILITY CLASSES=== */
 
-.text-block {
-  padding: 1rem;
+.flashcard .text-block {
+  padding: 16px;
 }
 
-.text-block *:first-child {
+.flashcard .text-block > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
 
-.text-block *:last-child {
+.flashcard .text-block > *:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.text-block + .text-block {
+.flashcard .text-block + .text-block {
   border-top: 1px solid #ddd;
 }
 
-.nightMode .text-block + .text-block {
+.nightMode .flashcard .text-block + .text-block {
   border-top: 1px solid #333;
 }
 
@@ -362,15 +376,6 @@
 
 .flex-col {
   flex-direction: column;
-}
-
-.flashcard .pill {
-  font-size: 70%;
-  color: #000;
-  background: #dddddd99;
-  padding: 0.4rem 0.7rem;
-  border-radius: 1rem;
-  display: inline-block;
 }
 
 .center {
