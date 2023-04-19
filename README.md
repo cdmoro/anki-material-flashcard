@@ -2,6 +2,19 @@
 
 The goal of this project is to have a supercharged version of the basic Anki flashcards (front and back fields). You can have a very basic card but with a good looking style and then add features like images, emojis, hints, headers, subheader, text blocks, etc. Also, you have several variants to choose.
 
+## Features
+
+- Material style
+- 8 color variants
+- Wide image support (front and back)
+- Header and subhedaer (front)
+- Back sections
+- External link icon
+- Hints
+- Pills
+- Emoji support
+- Audio controls, vertical and horizontal (front and back)
+
 ## Screenshots
 
 | Light | Dark |
