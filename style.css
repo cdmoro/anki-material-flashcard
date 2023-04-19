@@ -122,11 +122,10 @@
 /* ===HINT STYLES=== */
 
 .flashcard a.hint {
-  margin: .5rem 0;
   text-decoration: underline;
 }
 
-.flashcard .hint {
+.flashcard .body .hint {
   font-size: 14px;
   font-style: italic;
   color: var(--accent-color);
@@ -141,6 +140,10 @@
 .nightMode .flashcard.base .hint,
 .nightMode .flashcard.white .hint {
   color: #fff;
+}
+
+div + .hint {
+  margin-top: .5rem;
 }
 
 /* ===IMAGE STYLES=== */
@@ -256,20 +259,10 @@
   height: 32px;
 }
 
-/* ===PILL STYLES=== */
-
-.flashcard .text-block .pill {
-  font-size: 70%;
-  color: #000;
-  background: #dddddd99;
-  padding: 0.4rem 0.7rem;
-  border-radius: 1rem;
-  display: inline-block;
-}
-
 /* ===VARIANTS=== */
 
 .flashcard.base {
+  --accent-color: #fff;
   --border-top-color: #ddd;
 }
 .flashcard.base .front,
@@ -277,6 +270,7 @@
   color: #000 !important;
 }
 .nightMode .flashcard.base {
+  --accent-color: #1d1d1d;
   --border-top-color: #333;
 }
 .nightMode .flashcard.base .front,
@@ -345,16 +339,6 @@
   padding: 16px;
 }
 
-.flashcard .text-block > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.flashcard .text-block > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
 .flashcard .text-block + .text-block {
   border-top: 1px solid #ddd;
 }
@@ -404,4 +388,15 @@
 .nightMode .flashcard a[href^="https://"]::after
 {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FFFFFF' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+}
+
+/* ===PILL STYLES=== */
+
+.flashcard .text-block .pill {
+  font-size: 70%;
+  color: #000;
+  background: #dddddd99;
+  padding: 0.4rem 0.7rem;
+  border-radius: 1rem;
+  display: inline-block;
 }
