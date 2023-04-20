@@ -5,7 +5,7 @@ The goal of this project is to have a supercharged version of the basic Anki fla
 ## Features
 
 - Material style
-- 8 color variants
+- 11 color variants
 - Wide image support (front and back)
 - Header and subhedaer (front)
 - Back sections
