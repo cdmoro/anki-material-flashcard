@@ -289,15 +289,15 @@ div + .hint {
   color: #000 !important;
 }
 .nightMode .flashcard.white {
-  --accent-color: #fcfcfc;
+  --accent-color: #FFF;
   --border-top-color: transparent;
 }
 
 .flashcard.blue {
-  --accent-color: #1565c0;
+  --accent-color: #1976d2;
 }
 .nightMode .flashcard.blue {
-  --accent-color: #64b5f6;
+  --accent-color: #42a5f5;
 }
 
 .flashcard.purple {
@@ -315,7 +315,7 @@ div + .hint {
 }
 
 .flashcard.teal {
-  --accent-color: #00695c;
+  --accent-color: #00796b;
 }
 .nightMode .flashcard.teal {
   --accent-color: #4db6ac;
@@ -333,6 +333,27 @@ div + .hint {
 }
 .nightMode .flashcard.orange {
   --accent-color: #ffb74d;
+}
+
+.flashcard.indigo {
+  --accent-color: #3949ab;
+}
+.nightMode .flashcard.indigo {
+  --accent-color: #9fa8da;
+}
+
+.flashcard.brown {
+  --accent-color: #6d4c41;
+}
+.nightMode .flashcard.brown {
+  --accent-color: #a1887f;
+}
+
+.flashcard.lime {
+  --accent-color: #9e9d24;
+}
+.nightMode .flashcard.lime {
+  --accent-color: #cddc39;
 }
 
 .accent-color {
