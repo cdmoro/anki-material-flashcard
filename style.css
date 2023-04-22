@@ -157,7 +157,7 @@ div + .hint {
 }
 
 .flashcard.front .body img {
-  max-height: 150px;
+  max-height: 200px;
   max-width: 400px;
   vertical-align: middle;
 }
@@ -165,7 +165,7 @@ div + .hint {
 .flashcard.back > .body > img {
   width: 100%;
   object-fit: cover;
-  max-height: 180px;
+  max-height: 200px;
   display: block;
 }
 
