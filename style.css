@@ -2,7 +2,7 @@
 
 .card {
   --border-radius: 4px;
-  --front-font-size: 24px;
+  --front-font-size: 22px;
   --border-top-color: transparent;
 
   --accent-color: #fff;
@@ -89,7 +89,7 @@
 }
 
 .flashcard.back > hr:has(+ .body > img:first-child),
-.flashcard.back > hr:has(+ img:first-child){
+.flashcard.back > hr:has(+ img:first-child) {
   border-top-width: 0;
 }
 
@@ -143,15 +143,15 @@
 }
 
 div + .hint {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 /* ===IMAGE STYLES=== */
 
 .flashcard.front > img {
-	width: 100%;
-	object-fit: cover;
-	max-width: 500px;
+  width: 100%;
+  object-fit: cover;
+  max-width: 500px;
   max-height: 200px;
   display: block;
 }
@@ -193,13 +193,13 @@ div + .hint {
 
 .flashcard.front .replaybutton svg polygon,
 .nightMode .flashcard.front.base .replaybutton svg polygon {
-    fill: #FFF;
+  fill: #fff;
 }
 
 .nightMode .flashcard.front .replaybutton svg polygon,
 .flashcard.front.base .replaybutton svg polygon,
 .flashcard.front.white .replaybutton svg polygon {
-    fill: #000;
+  fill: #000;
 }
 
 /* ===REPLY BUTTON (DESKTOP APP)=== */
@@ -236,13 +236,13 @@ div + .hint {
 
 .flashcard.front .replay-button svg path,
 .nightMode .flashcard.front.base .replay-button svg path {
-    fill: #FFF;
+  fill: #fff;
 }
 
 .nightMode .flashcard.front .replay-button svg path,
 .flashcard.front.base .replay-button svg path,
 .flashcard.front.white .replay-button svg path {
-    fill: #000;
+  fill: #000;
 }
 
 /* ===REPLAY BUTTON (FIREFOX)=== */
@@ -289,7 +289,7 @@ div + .hint {
   color: #000 !important;
 }
 .nightMode .flashcard.white {
-  --accent-color: #FFF;
+  --accent-color: #fff;
   --border-top-color: transparent;
 }
 
@@ -365,7 +365,7 @@ div + .hint {
 }
 
 .nightMode .base .accent-color {
-  color: #FFF;
+  color: #fff;
 }
 
 /* ===UTILITY CLASSES=== */
@@ -386,7 +386,7 @@ div + .hint {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .flex-row {
