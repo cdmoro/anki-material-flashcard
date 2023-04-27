@@ -141,7 +141,7 @@
   color: var(--accent-color);
 }
 
-.note[class*="-filled"] .body .hint {
+.note.back[class*="-filled"] > .body .hint {
   color: #000;
 }
 
