@@ -1,12 +1,20 @@
-/* ===SCREEN STYLES=== */
+/*
+ * Name: Anki Material Flashcard
+ * Author: Carlos Bonadeo
+ * Version: 1.0.0
+ * Repo: https://github.com/cdmoro/anki-material-flashcard
+*/
+
+/*** SCREEN STYLES ***/
 
 .card {
   --border-radius: 4px;
   --front-font-size: 22px;
-  --border-top-color: transparent;
+  --border-top-color: #ddd;
 
   --accent-color: #fff;
   --card-background: #fff;
+  --front-font-color: #000;
   --font-color: #000;
 
   font-family: arial;
@@ -19,15 +27,17 @@
 .nightMode.card {
   --accent-color: #1d1d1d;
   --font-color: #fff;
+  --front-font-color: #fff;
   --card-background: #1d1d1d;
+  --border-top-color: #333;
 
   background: #121212;
 }
 
-/* ===FLASHCARD=== */
+/*** NOTE ***/
 
-.card .flashcard.front,
-.card .flashcard.back {
+.card .note.front,
+.card .note.back {
   max-width: 500px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: var(--border-radius);
@@ -36,119 +46,124 @@
   color: var(--font-color);
 }
 
-.card .flashcard.back {
+.card .note.back {
   background: var(--card-background);
 }
 
-.flashcard.front .body {
+.note.front .body {
   padding: 16px;
-  color: #fff;
+  color: var(--front-font-color);
   text-wrap: balance;
 }
 
-.nightMode .flashcard.front .body {
-  color: #000;
-}
-
-.flashcard.front .header {
+.note.front .header {
   font-size: 14px;
   margin-bottom: 1rem;
   font-style: italic;
 }
 
-.flashcard.front .subheader {
+.note.front .subheader {
   margin-top: 0.5rem;
   font-size: 16px;
 }
 
-.flashcard.front {
+.note.front {
   background: var(--accent-color);
   font-size: var(--front-font-size);
 }
 
-.flashcard.back .front {
+.note.back .front {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   color: #fff;
   font-size: var(--front-font-size);
   box-shadow: none;
 }
 
-.nightMode .flashcard.back .front {
+.nightMode .note.back .front {
   color: #000;
 }
 
-.flashcard.back > .body {
+.note.back > .body {
   text-align: left;
 }
 
-.flashcard.back hr {
+.note.back hr {
   margin: 0;
   border: none;
   border-top: var(--border-top-color) solid 1px;
   background: none;
 }
 
-.flashcard.back > hr:has(+ .body > img:first-child),
-.flashcard.back > hr:has(+ img:first-child) {
+.note.back > hr:has(+ .body > img:first-child),
+.note.back > hr:has(+ img:first-child) {
   border-top-width: 0;
 }
 
-.flashcard.back .subtitle {
+.note.back .subtitle {
   font-size: 16px;
   margin-bottom: 0.6rem;
   opacity: 0.6;
   margin-top: 1rem;
 }
 
-.flashcard.back .subtitle:first-child {
+.note.back .subtitle:first-child {
   margin-top: 0;
 }
 
-.flashcard.back ul,
-.flashcard.back ol {
+.note.back ul,
+.note.back ol {
   padding-left: 1rem;
   margin: 0;
 }
 
-.flashcard.front.symbol .body,
-.flashcard.front .body .symbol {
+.note.front.symbol .body,
+.note.front .body .symbol {
   font-size: 4rem;
 }
 
-.flashcard.front .body .emoji {
+.note.front .body .emoji {
   font-size: 4rem;
 }
 
-/* ===HINT STYLES=== */
+/*** HINT STYLES ***/
 
-.flashcard a.hint {
+.note a.hint {
   text-decoration: underline;
 }
 
-.flashcard .body .hint {
+.note .body .hint {
   font-size: 14px;
   font-style: italic;
-  color: var(--accent-color);
   display: block;
 }
 
-.flashcard.base .hint,
-.flashcard.white .hint {
+.note.back[class*="note-"] > .body .hint {
+  color: var(--accent-color);
+}
+
+.note[class*="-filled"] .body .hint {
   color: #000;
 }
 
-.nightMode .flashcard.base .hint,
-.nightMode .flashcard.white .hint {
+.nightMode .note[class*="-filled"] .body .hint {
   color: #fff;
 }
 
-div + .hint {
-  margin-top: 0.5rem;
+.note.note-white .body .hint {
+  color: #000;
 }
 
-/* ===IMAGE STYLES=== */
+.nightMode .note.back.note-white > .body .hint {
+  color: #fff;
+}
 
-.flashcard.front > img {
+.note.front .hint {
+  color: var(--front-font-color);
+}
+
+/*** IMAGE STYLES ***/
+
+.note.front > img {
   width: 100%;
   object-fit: cover;
   max-width: 500px;
@@ -156,231 +171,350 @@ div + .hint {
   display: block;
 }
 
-.flashcard.front .body img {
+.note.front .body img {
   max-height: 200px;
   max-width: 400px;
   vertical-align: middle;
 }
 
-.flashcard.back > .body > img {
+.note.back > .body > img {
   width: 100%;
   object-fit: cover;
   max-height: 200px;
   display: block;
 }
 
-/* ===REPLAY BUTTON (ANDROID MOBILE APP)=== */
+/*** REPLAY BUTTON (ANDROID MOBILE APP) ***/
 
-.flashcard .replaybutton span {
+.note .replaybutton span {
   height: 32px;
   padding: 0;
 }
 
-.flashcard .replaybutton svg polygon {
+.nightMode .note .replaybutton span svg polygon {
+  fill: #fff;
+}
+
+.note.back[class*="note-"] > .body .replaybutton span svg polygon {
   fill: var(--accent-color);
   align-self: center;
 }
 
-.flashcard.base .replaybutton svg polygon,
-.flashcard.white .replaybutton svg polygon {
+.note.back[class*="-filled"] > .body .replaybutton span svg polygon {
   fill: #000;
 }
 
-.nightMode .flashcard.base .replaybutton svg polygon,
-.nightMode .flashcard.white .replaybutton svg polygon {
+.nightMode .note.back[class*="-filled"] > .body .replaybutton span svg polygon {
   fill: #fff;
 }
 
-.flashcard.front .replaybutton svg polygon,
-.nightMode .flashcard.front.base .replaybutton svg polygon {
-  fill: #fff;
-}
-
-.nightMode .flashcard.front .replaybutton svg polygon,
-.flashcard.front.base .replaybutton svg polygon,
-.flashcard.front.white .replaybutton svg polygon {
+.note.back.note-white > .body .replaybutton span svg polygon {
   fill: #000;
 }
 
-/* ===REPLY BUTTON (DESKTOP APP)=== */
+.nightMode .note.back.note-white > .body .replaybutton span svg polygon {
+  fill: #fff;
+}
 
-.flashcard .replay-button {
+.note.front[class*="note-"] .replaybutton svg polygon {
+  fill: #fff;
+}
+
+.nightMode .note.front[class*="note-"] .replaybutton svg polygon {
+  fill: #000;
+}
+
+.note.front[class*="-filled"] .replaybutton svg polygon {
+  fill: #000;
+}
+
+.nightMode .note.front[class*="-filled"] .replaybutton svg polygon {
+  fill: #fff;
+}
+
+.note.front.note-white .replaybutton svg polygon {
+  fill: #000;
+}
+
+/*** REPLY BUTTON (DESKTOP APP) ***/
+
+.note .replay-button {
   margin: 0;
 }
 
-.flashcard .replay-button svg {
+.note .replay-button svg {
   width: 32px;
   height: 32px;
 }
 
-.flashcard .replay-button svg circle {
+.note .replay-button svg circle {
   fill: transparent;
   stroke: transparent;
 }
 
-.flashcard .replay-button svg path {
-  fill: var(--accent-color);
+.note .replay-button svg path {
   transform: scale(0.9);
   transform-origin: center;
-}
-
-.flashcard.base .replay-button svg path,
-.flashcard.white .replay-button svg path {
   fill: #000;
 }
 
-.nightMode .flashcard.base .replay-button svg path,
-.nightMode .flashcard.white .replay-button svg path {
+.nightMode .note .replay-button svg path {
   fill: #fff;
 }
 
-.flashcard.front .replay-button svg path,
-.nightMode .flashcard.front.base .replay-button svg path {
+.note.front[class*="note-"] .replay-button svg path {
   fill: #fff;
 }
 
-.nightMode .flashcard.front .replay-button svg path,
-.flashcard.front.base .replay-button svg path,
-.flashcard.front.white .replay-button svg path {
+.nightMode .note.front[class*="note-"] .replay-button svg path {
   fill: #000;
 }
 
-/* ===REPLAY BUTTON (FIREFOX)=== */
+.note.front[class*="-filled"] .replay-button svg path {
+  fill: #000;
+}
 
-.flashcard .gecko audio {
+.nightMode .note.front[class*="-filled"] .replay-button svg path {
+  fill: #fff;
+}
+
+.note.back[class*="note-"] > .body .replay-button svg path {
+  fill: var(--accent-color);
+}
+
+.note.back[class*="-filled"] > .body .replay-button svg path {
+  fill: #000;
+}
+
+.nightMode .note.back[class*="-filled"] > .body .replay-button svg path {
+  fill: #fff;
+}
+
+.note.back.note-white .body .replay-button svg path {
+  fill: #000;
+}
+
+.nightMode .note.back.note-white .body .replay-button svg path {
+  fill: #fff;
+}
+
+.note.back .note.front.note-white .replay-button svg path {
+  fill: #000;
+}
+
+/*** REPLAY BUTTON (FIREFOX) ***/
+
+.note .gecko audio {
   width: 48px;
   height: 32px;
 }
 
-/* ===REPLAY BUTTON (CHROME)=== */
+/*** REPLAY BUTTON (CHROME) ***/
 
-.flashcard .chrome audio {
+.note .chrome audio {
   width: 143px;
   height: 32px;
 }
 
-/* ===VARIANTS=== */
+/*** VARIANTS ***/
 
-.flashcard.base,
-.flashcard.base + hr {
+.nightMode .note.note-white {
   --accent-color: #fff;
-  --border-top-color: #ddd;
-}
-.flashcard.base .front,
-.flashcard.base.front .body {
-  color: #000 !important;
-}
-.nightMode .flashcard.base,
-.nightMode .flashcard.base + hr {
-  --accent-color: #1d1d1d;
-  --border-top-color: #333;
-}
-.nightMode .flashcard.base .front,
-.nightMode .flashcard.base.front .body {
-  color: #fff !important;
 }
 
-.flashcard.white {
-  --accent-color: #fff;
-  --border-top-color: #ddd;
-}
-.flashcard.white.front .body,
-.flashcard.white .front {
-  color: #000 !important;
-}
-.nightMode .flashcard.white {
-  --accent-color: #fff;
-  --border-top-color: transparent;
-}
-
-.flashcard.blue {
+.note.note-blue {
   --accent-color: #1976d2;
 }
-.nightMode .flashcard.blue {
+.nightMode .note.note-blue {
   --accent-color: #42a5f5;
 }
+.note.note-blue-filled {
+  --card-background: #cbdef1;
+}
+.nightMode .note.note-blue-filled {
+  --card-background: #243a4c;
+}
 
-.flashcard.purple {
+.note.note-purple {
   --accent-color: #6200ee;
 }
-.nightMode .flashcard.purple {
+.nightMode .note.note-purple {
   --accent-color: #bb86fc;
 }
+.note.note-purple-filled {
+  --card-background: #efcaf5;
+}
+.nightMode .note.note-purple-filled {
+  --card-background: #383042;
+}
 
-.flashcard.pink {
+.note.note-pink {
   --accent-color: #e91e63;
 }
-.nightMode .flashcard.pink {
+.nightMode .note.note-pink {
   --accent-color: #f06292;
 }
+.note.note-pink-filled {
+  --card-background: #f4dddc;
+}
+.nightMode .note.note-pink-filled {
+  --card-background: #402d31;
+}
 
-.flashcard.teal {
+.note.note-teal {
   --accent-color: #00796b;
 }
-.nightMode .flashcard.teal {
+.nightMode .note.note-teal {
   --accent-color: #4db6ac;
 }
+.note.note-teal-filled {
+  --card-background: #c0fdf6;
+}
+.nightMode .note.note-teal-filled {
+  --card-background: #263a38;
+}
 
-.flashcard.green {
+.note.note-green {
   --accent-color: #388e3c;
 }
-.nightMode .flashcard.green {
+.nightMode .note.note-green {
   --accent-color: #81c784;
 }
+.note.note-green-filled {
+  --card-background: #b8edba;
+}
+.nightMode .note.note-green-filled {
+  --card-background: #1c241c;
+}
 
-.flashcard.orange {
+.note.note-orange {
   --accent-color: #ef6c00;
 }
-.nightMode .flashcard.orange {
+.nightMode .note.note-orange {
   --accent-color: #ffb74d;
 }
+.note.note-orange-filled {
+  --card-background: #ffdfc5;
+}
+.nightMode .note.note-orange-filled {
+  --card-background: #322819;
+}
 
-.flashcard.indigo {
+.note.note-indigo {
   --accent-color: #3949ab;
 }
-.nightMode .flashcard.indigo {
+.nightMode .note.note-indigo {
   --accent-color: #9fa8da;
 }
+.note.note-indigo-filled {
+  --card-background: #ccd4ff;
+}
+.nightMode .note.note-indigo-filled {
+  --card-background: #272938;
+}
 
-.flashcard.brown {
+.note.note-brown {
   --accent-color: #6d4c41;
 }
-.nightMode .flashcard.brown {
+.nightMode .note.note-brown {
   --accent-color: #a1887f;
 }
+.note.note-brown-filled {
+  --card-background: #efd3ca;
+}
+.nightMode .note.note-brown-filled {
+  --card-background: #322926;
+}
 
-.flashcard.lime {
+.note.note-lime {
   --accent-color: #9e9d24;
 }
-.nightMode .flashcard.lime {
+.nightMode .note.note-lime {
   --accent-color: #cddc39;
+}
+.note.note-lime-filled {
+  --card-background: #f7f7c1;
+}
+.nightMode .note.note-lime-filled {
+  --card-background: #2b2c20;
+}
+
+.note.note-red {
+  --accent-color: #d32f2f;
+}
+.nightMode .note.note-red {
+  --accent-color: #e57373;
+}
+.note.note-red-filled {
+  --card-background: #f7bfbf;
+}
+.nightMode .note.note-red-filled {
+  --card-background: #371c1c;
+}
+
+.note[class*="note-"] {
+  --front-font-color: #fff;
+}
+
+.note.back[class*="-filled"] {
+  box-shadow: none;
+}
+
+.note.back[class*="-filled"] > hr {
+  border-top-color: #aaa;
+}
+
+.note.back[class*="-filled"] .text-block + .text-block {
+  border-top-color: #aaa;
+}
+
+.nightMode .note.back[class*="-filled"] .text-block + .text-block {
+  border-top-color: #555;
+}
+
+.note.back[class*="-filled"] .text-block .pill {
+  background: #999;
+}
+
+.nightMode .note.back[class*="-filled"] > hr {
+  border-top-color: #555;
+}
+
+.note.front[class*="-filled"] {
+  --front-font-color: #000;
+  background-color: var(--card-background);
+}
+.nightMode .note.front[class*="-filled"] {
+  --front-font-color: #fff;
+}
+
+.note.note-white {
+  --front-font-color: #000;
+}
+
+.nightMode .note[class*="note-"] {
+  --front-font-color: #000;
 }
 
 .accent-color {
   color: var(--accent-color);
 }
 
-.base .accent-color {
-  color: #000;
-}
+/*** TEXT-BLOCK CLASSES ***/
 
-.nightMode .base .accent-color {
-  color: #fff;
-}
-
-/* ===UTILITY CLASSES=== */
-
-.flashcard .text-block {
+.note .text-block {
   padding: 16px;
 }
 
-.flashcard .text-block + .text-block {
+.note .text-block + .text-block {
   border-top: 1px solid #ddd;
 }
 
-.nightMode .flashcard .text-block + .text-block {
+.nightMode .note .text-block + .text-block {
   border-top: 1px solid #333;
 }
+
+/*** UTILITY CLASSES ***/
 
 .flex {
   display: flex;
@@ -401,12 +535,29 @@ div + .hint {
   text-align: center;
 }
 
-.flashcard .body a {
+.note-centered * {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gap-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.note .body a {
   color: var(--font-color);
 }
 
-.flashcard a[href^="http"]::after,
-.flashcard a[href^="https://"]::after
+.note a[href^="http"]::after,
+.note a[href^="https://"]::after
 {
   content: "";
   width: 11px;
@@ -419,19 +570,33 @@ div + .hint {
   display: inline-block;
 }
 
-.nightMode .flashcard a[href^="http"]::after,
-.nightMode .flashcard a[href^="https://"]::after
+.nightMode .note a[href^="http"]::after,
+.nightMode .note a[href^="https://"]::after
 {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FFFFFF' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
 }
 
-/* ===PILL STYLES=== */
+/*** PILL STYLES ***/
 
-.flashcard .text-block .pill {
+.note .text-block .pill {
   font-size: 70%;
   color: #000;
   background: #dddddd99;
   padding: 0.4rem 0.7rem;
   border-radius: 1rem;
   display: inline-block;
+}
+
+/*** COMBINE VARIANTS STYLES ***/
+
+.note.back[class*="note-"] .note.front:not([class*="note-"]) {
+  background: unset;
+}
+
+.note.back[class*="note-"] .note.front:not([class*="note-"]) .body {
+  color: #000;
+}
+
+.nightMode .note.back[class*="note-"] .note.front:not([class*="note-"]) .body {
+  color: #fff;
 }
