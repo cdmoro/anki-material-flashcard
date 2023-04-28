@@ -483,6 +483,7 @@
 .note.front[class*="-filled"] {
   --front-font-color: #000;
   background-color: var(--card-background);
+  box-shadow: none;
 }
 .nightMode .note.front[class*="-filled"] {
   --front-font-color: #fff;
