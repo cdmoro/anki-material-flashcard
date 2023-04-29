@@ -493,7 +493,7 @@
   --front-font-color: #000;
 }
 
-.nightMode .note[class*="note-"] {
+.nightMode .note[class*="note-"]:not(.note-centered) {
   --front-font-color: #000;
 }
 
