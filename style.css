@@ -452,7 +452,7 @@
   --card-background: #371c1c;
 }
 
-.note[class*="note-"]:not(.note-centered) {
+.note[class*="note-"] {
   --front-font-color: #fff;
 }
 
@@ -493,7 +493,7 @@
   --front-font-color: #000;
 }
 
-.nightMode .note[class*="note-"]:not(.note-centered) {
+.nightMode .note[class*="note-"] {
   --front-font-color: #000;
 }
 
@@ -534,12 +534,6 @@
 
 .center {
   text-align: center;
-}
-
-.note-centered * {
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .gap-sm {
