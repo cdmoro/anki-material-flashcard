@@ -452,7 +452,7 @@
   --card-background: #371c1c;
 }
 
-.note[class*="note-"] {
+.note[class*="note-"]:not(.note-centered) {
   --front-font-color: #fff;
 }
 
