@@ -636,11 +636,20 @@
   color: #fff;
 }
 
-.centered .body *,
+.center {
+  text-align: center;
+}
+
+.note.centered .body *,
 [class*="::centered"] .body * {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   text-align: center;
+}
+
+.note.centered .body em,
+.note.centered .body strong {
+  display: contents;
 }
