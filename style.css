@@ -562,7 +562,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  text-align: left;
 }
 
 .flex-row {
@@ -635,6 +634,10 @@
 
 .nightMode .note.back[class*="note-"] .note.front:not([class*="note-"]) .body {
   color: #fff;
+}
+
+.left {
+  text-align: left;
 }
 
 .center {
