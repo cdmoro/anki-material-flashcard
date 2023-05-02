@@ -317,137 +317,178 @@
 
 /*** VARIANTS ***/
 
-.nightMode .note.note-white {
+.nightMode .note.note-white,
+.nightMode .note[class*="::note-white"] {
   --accent-color: #fff;
 }
 
-.note.note-blue {
+.note.note-blue,
+.note[class*="::note-blue"] {
   --accent-color: #1976d2;
 }
-.nightMode .note.note-blue {
+.nightMode .note.note-blue,
+.nightMode .note[class*="::note-blue"] {
   --accent-color: #42a5f5;
 }
-.note.note-blue-filled {
+.note.note-blue-filled,
+.note[class*="::note-blue-filled"] {
   --card-background: #cbdef1;
 }
-.nightMode .note.note-blue-filled {
+.nightMode .note.note-blue-filled,
+.nightMode .note[class*="::note-blue-filled"] {
   --card-background: #243a4c;
 }
 
-.note.note-purple {
+.note.note-purple,
+.note[class*="::note-purple"] {
   --accent-color: #6200ee;
 }
-.nightMode .note.note-purple {
+.nightMode .note.note-purple,
+.nightMode .note[class*="::note-purple"] {
   --accent-color: #bb86fc;
 }
-.note.note-purple-filled {
+.note.note-purple-filled,
+.note[class*="::note-purple-filled"] {
   --card-background: #efcaf5;
 }
-.nightMode .note.note-purple-filled {
+.nightMode .note.note-purple-filled,
+.nightMode .note[class*="::note-purple-filled"] {
   --card-background: #383042;
 }
 
-.note.note-pink {
+.note.note-pink,
+.note[class*="::note-pink"] {
   --accent-color: #e91e63;
 }
-.nightMode .note.note-pink {
+.nightMode .note.note-pink,
+.nigthMode .note[class*="::note-pink"] {
   --accent-color: #f06292;
 }
-.note.note-pink-filled {
+.note.note-pink-filled,
+.note[class*="::note-pink-filled"] {
   --card-background: #f4dddc;
 }
-.nightMode .note.note-pink-filled {
+.nightMode .note.note-pink-filled,
+.nightMode .note[class*="::note-pink-filled"] {
   --card-background: #402d31;
 }
 
-.note.note-teal {
+.note.note-teal,
+.note[class*="::note-teal"] {
   --accent-color: #00796b;
 }
-.nightMode .note.note-teal {
+.nightMode .note.note-teal,
+.nightMode .note[class*="::note-teal"] {
   --accent-color: #4db6ac;
 }
-.note.note-teal-filled {
+.note.note-teal-filled,
+.note[class*="::note-teal-filled"] {
   --card-background: #c0fdf6;
 }
-.nightMode .note.note-teal-filled {
+.nightMode .note.note-teal-filled,
+.nightMode .note[class*="::note-teal-filled"] {
   --card-background: #263a38;
 }
 
-.note.note-green {
+.note.note-green,
+.note[class*="::note-green"] {
   --accent-color: #388e3c;
 }
-.nightMode .note.note-green {
+.nightMode .note.note-green,
+.nightMode .note[class*="::note-green"] {
   --accent-color: #81c784;
 }
-.note.note-green-filled {
+.note.note-green-filled,
+.note[class*="::note-green-filled"] {
   --card-background: #b8edba;
 }
-.nightMode .note.note-green-filled {
+.nightMode .note.note-green-filled,
+.nightMode .note[class*="::note-green-filled"] {
   --card-background: #1c241c;
 }
 
-.note.note-orange {
+.note.note-orange,
+.note[class*="::note-orange"] {
   --accent-color: #ef6c00;
 }
-.nightMode .note.note-orange {
+.nightMode .note.note-orange,
+.nightMode .note[class*="::note-orange"] {
   --accent-color: #ffb74d;
 }
-.note.note-orange-filled {
+.note.note-orange-filled,
+.note[class*="::note-orange-filled"] {
   --card-background: #ffdfc5;
 }
-.nightMode .note.note-orange-filled {
+.nightMode .note.note-orange-filled,
+.nightMode .note[class*="::note-orange-filled"] {
   --card-background: #322819;
 }
 
-.note.note-indigo {
+.note.note-indigo,
+.note[class*="::note-indigo"] {
   --accent-color: #3949ab;
 }
-.nightMode .note.note-indigo {
+.nightMode .note.note-indigo,
+.nightMode .note[class*="::note-indigo"] {
   --accent-color: #9fa8da;
 }
-.note.note-indigo-filled {
+.note.note-indigo-filled,
+.note[class*="::note-indigo-filled"] {
   --card-background: #ccd4ff;
 }
-.nightMode .note.note-indigo-filled {
+.nightMode .note.note-indigo-filled,
+.nightMode .note[class*="::note-indigo-filled"] {
   --card-background: #272938;
 }
 
-.note.note-brown {
+.note.note-brown,
+.note[class*="::note-brown"] {
   --accent-color: #6d4c41;
 }
-.nightMode .note.note-brown {
+.nightMode .note.note-brown,
+.nightMode .note[class*="::note-brown"] {
   --accent-color: #a1887f;
 }
-.note.note-brown-filled {
+.note.note-brown-filled,
+.note[class*="::note-brown-filled"] {
   --card-background: #efd3ca;
 }
-.nightMode .note.note-brown-filled {
+.nightMode .note.note-brown-filled,
+.nightMode .note[class*="::note-brown-filled"] {
   --card-background: #322926;
 }
 
-.note.note-lime {
+.note.note-lime,
+.note[class*="::note-lime"] {
   --accent-color: #9e9d24;
 }
-.nightMode .note.note-lime {
+.nightMode .note.note-lime,
+.nightMode .note[class*="::note-lime"] {
   --accent-color: #cddc39;
 }
-.note.note-lime-filled {
+.note.note-lime-filled,
+.note[class*="::note-lime-filled"] {
   --card-background: #f7f7c1;
 }
-.nightMode .note.note-lime-filled {
+.nightMode .note.note-lime-filled,
+.nightMode .note[class*="::note-lime-filled"] {
   --card-background: #2b2c20;
 }
 
-.note.note-red {
+.note.note-red,
+.note[class*="::note-red"] {
   --accent-color: #d32f2f;
 }
-.nightMode .note.note-red {
+.nightMode .note.note-red,
+.nightMode .note[class*="::note-red"] {
   --accent-color: #e57373;
 }
-.note.note-red-filled {
+.note.note-red-filled,
+.note[class*="::note-red-filled"] {
   --card-background: #f7bfbf;
 }
-.nightMode .note.note-red-filled {
+.nightMode .note.note-red-filled,
+.nightMode .note[class*="::note-red-filled"] {
   --card-background: #371c1c;
 }
 
@@ -595,7 +636,8 @@
   color: #fff;
 }
 
-.centered .body * {
+.centered .body *,
+[class*="::centered"] .body * {
   display: flex;
   flex-direction: column;
   align-items: center;
