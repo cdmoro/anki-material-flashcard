@@ -641,7 +641,7 @@
 }
 
 .note.centered .body *,
-[class*="::centered"] .body * {
+.note[class*="::centered"] .body * {
   display: flex;
   flex-direction: column;
   align-items: center;
