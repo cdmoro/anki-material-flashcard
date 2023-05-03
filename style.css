@@ -8,7 +8,7 @@
 /*** SCREEN STYLES ***/
 
 .card {
-  --border-radius: 4px;
+  --border-radius: 8px;
   --front-font-size: 22px;
   --border-top-color: #ddd;
 
