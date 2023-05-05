@@ -497,8 +497,9 @@
   --front-font-color: #fff;
 }
 
+.note.front[class*="-filled"],
 .note.back[class*="-filled"] {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .note.back[class*="-filled"] > hr {
